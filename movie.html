@@ -5,63 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-    height:100% ;
-    
-    background-size: cover;
-    background-attachment: fixed;
+        .profile-conteiner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           align-items: center;
+           flex-wrap: wrap;
 
-}
-.container{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  height: 500px;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 60px 0;
-  background-color: rgba(253, 250, 250, 0.641);
-  
-}
-.movie{
-    width: 300px;
-    height: 600px;
-    background:rgb(245, 235, 238) ;
-    display:flex;
-    flex-direction:column;
-    border-radius: 3px;
-    margin:0 20px 20px 20px ;
-    box-shadow: 0 0 20px rgb(17, 14, 14);
-}
-.movie-image-1{
-    background: url(img/movie-1.jpg);
-    
-}
-.movie-image-2{
-    background: url(img/movie-2.jpg);}
-    .movie-image-3{
-        background: url(img/movie-3.jpg);
-        
-    
-}
-
-.movie-image{
-    height:500px;
-    width:300px;
-    position: relative;
-    background-size: cover;
-    background-blend-mode:screen;
-    
-}
-.movie-image span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 10px;
-    font-size :10px;
-
-}
-.movie-info{
+        }
+        .profile-card{
+             background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);;
+            width: 300px;
+            height: 550px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px;
+        }
+        .profile-img{
+            
+            width: 150px;
+            height: 150px;
+          
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .profile-name{
+            text-align: center;
+        }
+        .movie-info{
     color: rgb(38, 17, 17);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex;
@@ -71,7 +44,7 @@
 }
 .movie-text{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 10px;
 }
 .movie-text p:nth-child(1){
@@ -82,8 +55,7 @@
 }
 .likes{
     color: blue;
-    
-}
+    }
 .likes{
     margin-left:10px ;
 }
@@ -91,26 +63,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
-    margin:5px 0;
+   text-align: justify;
+   margin: 5px 0; 
+    
 }
 .cast{
-    font-size: 14px;
+    font-size: 10px;
     font-style: italic;
     color: rgb(30, 26, 26);
     padding:15px;
-    
-}
-.actions{
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.text{
-    font-size: 14px;
+    }
+    .text{
+    font-size: 12px;
     color:brown;
     padding: 15px;
     display: flex;
+   
 }
 button{
     padding:3px 8px;
@@ -125,133 +93,122 @@ button:hover{
     color: blue;
     background-color: blue ;
 } 
-  /* small devices */
-@media screen and (max-width: 599px){
-    .container{
-        justify-content:space-between ;
-        display: flex;
-        flex-direction: column;
-
-    }}
-    /* normal devices */
- @media screen and (min-width: 600px) and (max-width: 768px){
-   .container{ display: flex;
- }}
-
-    
-/* tablets */
-@media screen and (min-width:769px) and (max-width:992px) {
-    
+.actions{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-     /* large device */
-@media screen and (min-width:993px) and (max-width:1200px){
-   
-}  
     </style>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="movie">
-        <div class="movie-image  movie-image-1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgeuk1I7iHql7q90_1ltnAQjVfkXDATBvtjfdOdg6VXU9WG77NLwpzGw02hpl_djz8jsI&usqp=CAU" alt="Movie Poster" height="150px" width="300px">
+    <div class="profile-conteiner">
+        <div class="profile-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgeuk1I7iHql7q90_1ltnAQjVfkXDATBvtjfdOdg6VXU9WG77NLwpzGw02hpl_djz8jsI&usqp=CAU" alt="Movie Poster" height="150px" width="150px" class="profile-img" /> 
             <hr>
-        <span><i class="fa fa-align-left"></i></span>
-    </div>
-    <div class="movie-info">
-        <p class="title">Gadar</p>
+            <h3  class="profile-name">Gadar 2</h3>
+            <span><i class="fa fa-align-left"></i></span>
+    
+     <div class="movie-info">
+        
         <div class="movie-text">
             <p>Summary</p>
             <div class="likes">
-                <span><i class="fa fa-thumbs-up"></i> 165
+                <span><i class="fa fa-thumbs-up"></i> 175
                 </span>
-                <span><i class=" fa fa-comments"></i>211</span>
+                <span><i class=" fa fa-comments"></i>311</span>
             </div>
+        </div>
+        </div>
+        
+        <div class="Summary" >
+            <p class="text">
+                During the partition, Tara marries Sakina and they live a happy life. However their happiness is short-lived when Sakina's father forces her to stay in Pakistan and separates her from her family.
+            </p>
+            <p class="cast">  Anil Sharma Kamal Mukut · Sunny Deol · Ameesha Patel · Utkarsh Sharma · Gaurav Chopra · Manish Wadhwa ,etc
+         </p>
+            </div>
+           <div class="actions">
+                <button><i class="fa fa-play"  ></i> Watch Trailer </button>
+                <div class="actions-more">
+                 <i class="fa fa-save"></i>
+                 <i class="fa fa-bookmark"></i>
+                 <i class="fa fa-share-alt"></i>
+                </div>
+                </div>
+                </div>
+     <div class="profile-card">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/l3bx5e80/poster/p/x/m/small-kgf-poster-kgf-yash-movie-poster-for-room-kgf-chapter-2-original-imageh8qchumcz8k.jpeg?q=20&crop=false" height="150px" width="150px" class="profile-img" /> 
+        <hr>
+        <h3  class="profile-name">KGF</h3>
+        <span><i class="fa fa-align-left"></i></span>
+
+ <div class="movie-info">
+    
+    <div class="movie-text">
+        <p>Summary</p>
+        <div class="likes">
+            <span><i class="fa fa-thumbs-up"></i>211
+            </span>
+            <span><i class=" fa fa-comments"></i>100</span>
         </div>
     </div>
+    </div>
+    
     <div class="Summary" >
-    <p class="text">
-        During the partition, Tara marries Sakina and they live a happy life. However their happiness is short-lived when Sakina's father forces her to stay in Pakistan and separates her from her family.
-    </p>
-    <p class="cast">  Anil Sharma Kamal Mukut · Sunny Deol · Ameesha Patel · Utkarsh Sharma · Gaurav Chopra · Manish Wadhwa ,etc
-            
-    </p>
-   </div>
-   <div class="actions">
-   <button><i class="fa fa-play"  ></i> Watch Trailer </button>
-   <div class="actions-more">
-    <i class="fa fa-save"></i>
-    <i class="fa fa-bookmark"></i>
-    <i class="fa fa-share-alt"></i>
-   </div>
-   </div>
-        </div>
-        <div class="movie">
-            <div class="movie-image  movie-image-2">
-                <img src="https://rukminim2.flixcart.com/image/850/1000/l3bx5e80/poster/p/x/m/small-kgf-poster-kgf-yash-movie-poster-for-room-kgf-chapter-2-original-imageh8qchumcz8k.jpeg?q=20&crop=false" height="150px" width="300px">
-                <hr>
-            <span><i class="fa fa-align-left"></i></span>
-        </div>
-        <div class="movie-info">
-            <p class="title">KGF</p>
-            <div class="movie-text">
-                <p   class="movie-text">Summary</p><div class="likes">
-                    <span><i class="fa fa-thumbs-up"></i> 111
-                    </span>
-                    <span><i class=" fa fa-comments"></i>99</span>
-                </div>
-            </div>
-        </div>
-       <div class="Summary" >
-        <p class="text">Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying mother. His quest takes him to Mumbai, where he becomes involved with the notorious gold mafia
-            
+        <p class="text">
+            Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying mother. His quest takes him to Mumbai, where he becomes involved with the notorious gold mafia.
         </p>
-        <p class="cast"> Yash, Ramachandra Raju, Srinidhi Shetty, Vasishta N. Simha, Achyuth Kumar, Anant Nag, Archana Jois, Malavika ...
+        <p class="cast">  Yash, Ramachandra Raju, Srinidhi Shetty, Vasishta N. Simha, Achyuth Kumar, Anant Nag, Archana Jois, Malavika ...
             
-        </p>
-       </div>
+     </p>
+        </div>
        <div class="actions">
-       <button><i class="fa fa-play"  ></i> Watch Trailer </button>
-       <div class="actions-more">
-        <i class="fa fa-save"></i>
-        <i class="fa fa-bookmark"></i>
-        <i class="fa fa-share-alt"></i>
-       </div>
-       </div>
+            <button><i class="fa fa-play"  ></i> Watch Trailer </button>
+            <div class="actions-more">
+             <i class="fa fa-save"></i>
+             <i class="fa fa-bookmark"></i>
+             <i class="fa fa-share-alt"></i>
             </div>
-            <div  class="movie">
-                <div class="movie-image   movie-image-3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9gHxWXNMUr3lMJr4W8rWpVh6vwyjriJ6bQ&s" width="300px" height="150px">
-                <hr>
-            <span><i class="fa fa-align-left"></i></span>
             </div>
-            <div class="movie-info">
-                <p class="title">Bholaa</p>
-                <div class="movie-text">
-                    <P>Summary</P><div class="likes">
-                        <span><i class="fa fa-thumbs-up"></i> 423
-                        </span>
-                        <span><i class=" fa fa-comments"></i>203</span>
-                    </div>
-                </div>
             </div>
-           <div class="Summary" >
-            <p class="text"> Bholaa is finally going home to meet his young daughter. However, his journey is not so simple as he soon faces a pathway full of crazy obstacles, with death lurking around every corner.
-                
-            </p>
-            <p class="cast"> Ajay Devgn · Bholaa ; Abhishek Bachchan · Chomu Singh ; Makrand Deshpande · Jailmate ; Sanjay Mishra · Constable Angad Yadav
-                
-            </p>
-           </div>
-           <div class="actions">
-           <button><i class="fa fa-play"  ></i> Watch Trailer </button>
-           <div class="actions-more">
-            <i class="fa fa-save"></i>
-            <i class="fa fa-bookmark"></i>
-            <i class="fa fa-share-alt"></i>
-           </div>
-           </div>
-                </div>
-            </div>
+
+ <div class="profile-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR9gHxWXNMUr3lMJr4W8rWpVh6vwyjriJ6bQ&s" alt="Movie Poster" height="150px" width="150px" class="profile-img" /> 
+    <hr>
+    <h3  class="profile-name">Bholaa</h3>
+    <span><i class="fa fa-align-left"></i></span>
+
+<div class="movie-info">
+
+<div class="movie-text">
+    <p>Summary</p>
+    <div class="likes">
+        <span><i class="fa fa-thumbs-up"></i> 323
+        </span>
+        <span><i class=" fa fa-comments"></i>243</span>
+    </div>
+</div>
+</div>
+
+<div class="Summary" >
+    <p class="text">
+        Bholaa is finally going home to meet his young daughter. However, his journey is not so simple as he soon faces a pathway full of crazy obstacles, with death lurking around every corner.
+    </p>
+    <p class="cast"> Ajay Devgn · Bholaa ; Abhishek Bachchan · Chomu Singh ; Makrand Deshpande · Jailmate ; Sanjay Mishra · Constable Angad Yadav
+ </p>
+    </div>
+   <div class="actions">
+        <button><i class="fa fa-play"  ></i> Watch Trailer </button>
+        <div class="actions-more">
+         <i class="fa fa-save"></i>
+         <i class="fa fa-bookmark"></i>
+         <i class="fa fa-share-alt"></i>
+        </div>
+        </div>
+        </div>
+</div>
+    </div>
+</div>
 </body>
 </html>
